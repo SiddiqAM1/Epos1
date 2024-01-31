@@ -1,0 +1,116 @@
+.contact{
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    padding: 20px;
+}
+.contact-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column ;
+        padding: 20px;
+        gap: 16px;
+}
+.contact-form p {
+    font-size:16px ;
+}
+.contact-title{
+    font-size: 30px;
+}
+
+.contact-form-field{
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+    flex-direction:column ;
+    gap: 12px;
+}
+.contact-form-field input , textarea{
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    outline: none;
+}
+
+.contact-form-field.invalid input{
+    border:2px solid rgb(255, 61, 61) ;
+}
+.contact-form-field.invalid textarea {
+    border:2px solid rgb(255, 61, 61) ;
+}
+.contact-image img{
+    height: 100%;
+    width: 100%;
+}
+.form-validate{
+    color: rgb(255, 61, 61) ;
+}
+.contact-btn{
+    background-color:#345f95 ;
+    height: 40px;
+    width:50%;
+    transition: all 0.3s;
+    border-radius:20px;
+    color: white;
+    font-weight: 600;
+   
+}
+.contact-btn:hover{
+    background-color: #4178BB;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0,0.5);
+}
+
+@media(max-width:768px){
+    .contact{
+        background-color: #f9f9f9;
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows:1fr 1fr ;
+        width: 100%;
+        padding: 20px;
+        height: auto;
+
+    }
+}
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .contact-form {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .contact-title {
+        font-size: 20px; /* Even smaller font size for title */
+    }
+
+    .contact-btn {
+        width: 80%; /* Further increase button width */
+    }
+}
+@media (max-width: 768px) {
+    .contact-form-field input, .contact-form-field textarea {
+        height: 35px; /* Increase height for better touch interaction */
+    }
+}
+@media (max-width: 768px) {
+    .contact-btn {
+        width: 70%; /* Increase button width */
+        height: 45px; /* Increase button height */
+    }
+}
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 24px; /* Smaller font size for title */
+    }
+
+    .contact-form p {
+        font-size: 14px; /* Smaller font size for paragraph */
+    }
+}

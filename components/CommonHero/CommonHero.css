@@ -1,0 +1,126 @@
+.common-hero{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap:20%;
+    background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),
+    radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),
+    radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),
+    linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
+    opacity: 0.8;
+}
+.common-hero-title{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.1;
+        text-align: center;
+}
+
+.common-hero-btn-1{
+    background-color: #fff;
+    height: 50%;
+    width: 26%;
+    border-radius: 45px;
+    padding: 15px 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.common-hero-btn-2{
+    background-color: transparent;
+    height: 55%;
+    width: 26%;
+    color: white;
+    border: 2px solid white;
+    border-radius: 45px;
+    padding: 15px 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.common-hero-btn-1:hover{
+    padding: 10px 20px 20px;
+    background-color:#4178BB ;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.765);
+}
+.common-hero-btn-2:hover{
+    padding: 10px 20px 20px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.765);
+}
+
+
+.common-hero-buttons{
+    display: flex;
+    height: 15%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+.common-hero-overlay{
+    width: 100vw;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .common-hero-title {
+        font-size: 2.5rem; /* Smaller font size for title */
+    }
+
+    .common-hero-buttons {
+        width: 80%; /* Increase width for smaller screens */
+    }
+
+    .common-hero-btn-1, .common-hero-btn-2 {
+        width: 30%; /* Adjust button width */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .common-hero {
+        height: 60vh; 
+        padding: 20px; 
+    }
+
+    .common-hero-title {
+        font-size: 2rem; /* Even smaller font size for title */
+    }
+
+    .common-hero-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%; /* Full width */
+        gap: 10px; /* Adjust gap */
+    }
+
+    .common-hero-btn-1, .common-hero-btn-2 {
+        width: 80%; /* Increase button width */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .common-hero-title {
+        font-size: 1.8rem; /* Smaller font size for very small screens */
+    }
+
+    .common-hero-btn-1, .common-hero-btn-2 {
+        font-size: 14px; /* Adjust font size */
+    }
+}

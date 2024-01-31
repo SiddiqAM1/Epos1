@@ -1,0 +1,121 @@
+
+.gray-hover{
+    background-color: #fff;
+}
+.gray-hover:hover{
+    background-color: rgb(240,240,240);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.white-hover{
+    background-color: rgb(240,240,240);
+}
+.white-hover:hover{
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.areasBox-content{
+    display: flex;
+    flex-direction: column;
+    /* gap: 2vh; */
+    padding: 24px;
+    height: 60%;
+}
+.areasBox{
+    height: 100vh;
+    color: black;
+    border-radius: 5px;
+    overflow:hidden ;
+}
+
+.areasBox-description{
+    margin-bottom: 20px;
+}
+.areasBox-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.areasBox-button{
+    background-color: transparent;
+    height: 25px;
+    width: auto;
+    color: black;
+    border: 1px solid black;
+    border-radius: 45px;
+    padding: 15px 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.areasBox-button:hover{
+    padding: 10px 20px 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+}
+.areasBox-img{
+    height: 40%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+.areasBox-img img{
+    height:100% ;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width: 700px) {
+    .areasBox {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .areasBox-title {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .areasBox-description {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .areasBox-button {
+        font-size: 14px; /* Smaller font size */
+        padding: 10px 15px; /* Adjust padding */
+    }
+    .areasBox-img img {
+        height: auto; /* Adjust image height */
+    }
+    .areasBox-content {
+        padding: 16px; /* Reduce padding */
+        gap: 10px; /* Reduce gap */
+    }
+}
+
+@media (max-width: 400px) {
+    .areasBox-title {
+        font-size: 18px; /* Even smaller font size */
+    }
+
+    .areasBox-description {
+        font-size: 12px; /* Even smaller font size */
+    }
+
+    .areasBox-button {
+        font-size: 12px; /* Even smaller font size */
+        padding: 8px 12px; /* Adjust padding */
+    }
+
+    .areasBox-content {
+        padding: 12px; /* Further reduce padding */
+    }
+}
+@media (max-width: 600px) {
+    .areasBox-title {
+        font-size: 18px; /* Smaller font size for title */
+    }
+
+    .areasBox-description {
+        font-size: 12px; /* Smaller font size for description */
+    }
+}
+
