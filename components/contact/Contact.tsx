@@ -34,7 +34,7 @@ const ContactForm: React.FC = () => {
     }
     e.preventDefault();
 
-    fetch('http://localhost:4000/api/mail', {
+    fetch('https://server-back-lime.vercel.app//api/mail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
