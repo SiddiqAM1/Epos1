@@ -18,7 +18,7 @@ const truncateDescription = (text:string, maxWords:number) => {
 };
 
 
-const areasBox = ({name,description,imageUrl,className,index}:any) => {
+const AreasBox = ({name,description,imageUrl,className,index}:any) => {
   const pathName=usePathname()
   useEffect(()=>{
     
@@ -41,4 +41,4 @@ const areasBox = ({name,description,imageUrl,className,index}:any) => {
   )
 }
 
-export default areasBox
+export default AreasBox
