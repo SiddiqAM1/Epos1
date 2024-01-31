@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import "./Areas.css"
 
-import AreasBox from '../areasbox/areasBox'
+import AreasBox from '../areasbox/AreasBox'
 import data from "../../home/assets/data.json"
 import CommonHero from '@/components/CommonHero/CommonHero'
 import bg from "@/public/9.jpg"

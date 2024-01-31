@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Developers.css"
 import data from "../home/assets/data.json"
-import AreasBox from '../areas/areasbox/areasBox'
+import AreasBox from '../areas/areasbox/AreasBox'
 import CommonHero from '../CommonHero/CommonHero'
 import "../home/Home.css"
 import Damac from "./assets/Damac.jpg"

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { useRef } from 'react'
-import AreasBox from "@/components/areas/areasbox/areasBox"
+import AreasBox from "@/components/areas/areasbox/AreasBox"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import gsap from 'gsap'
 import {useGSAP} from "@gsap/react"

@@ -14,9 +14,10 @@ const About = () => {
         <span>About</span> Us
     </div>
     <div className="about-text">
-        <p>"Welcome to Epos Realty, where over 11 years of real estate expertise meet your property journey. With us, every property tells a unique story, and we're here to help you find yours. Explore homes with character and investments with potential. Get ready for seasoned advice, market insights, and a personalized approach to real estate. Because at Epos Realty, where every story begins here." For personalized consultations and property details, contact us at: 
-</p>
-    </div>
+    <p>&quot;Welcome to Epos Realty, where over 11 years of real estate expertise meet your property journey. With us, every property tells a unique story, and we're here to help you find yours. Explore homes with character and investments with potential. Get ready for seasoned advice, market insights, and a personalized approach to real estate. Because at Epos Realty, where every story begins here.&quot; For personalized consultations and property details, contact us at: 
+    </p>
+</div>
+
     <div className="about-people">
     <div className="about-box">
         <img src={Ayaz.src} alt="" className='about-image' />
